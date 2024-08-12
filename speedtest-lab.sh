@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-#speedtest-cli --secure --csv-header > speedtest_14.csv
+speedtest-cli --secure --csv-header > speedtest_14.csv
 
 #dont space !!!!!!!
 servers_id="$(speedtest-cli --list --secure | grep -Eo '[0-9]+)' | sed 's/)//')"
