@@ -13,7 +13,7 @@ for id in $servers_id; do
     speedtest-cli --secure --server $id --csv >> speedtest_14.csv
     echo "server id $id test complete. you can see test data at speedtest_14.csv"
 done
-echo ""
+
 echo ""
 echo "show data!"
 echo ""
