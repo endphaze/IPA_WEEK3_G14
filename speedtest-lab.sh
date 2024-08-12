@@ -15,5 +15,6 @@ for id in $servers_id; do
 done
 echo ""
 echo ""
-
+echo "show data!"
+echo ""
 cat speedtest_14.csv
