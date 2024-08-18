@@ -6,13 +6,18 @@ speedtest-cli --secure --csv-header > speedtest_14.csv
 #dont space !!!!!!!
 servers_id="$(speedtest-cli --list --secure | grep -Eo '[0-9]+)' | sed 's/)//')"
 
-#Sdata="$(speedtest-cli --list | grep -Eo '^.*[(]'"
+#eieissssssss
 
-for id in $servers_id; do
+while true; do
+    sleep 60
+    for id in $servers_id; do
     echo "testing speed at server $id..."
     speedtest-cli --secure --server $id --csv >> speedtest_14.csv
     echo "server id $id test complete. you can see test data at speedtest_14.csv"
+    done
 done
+
+
 
 echo ""
 echo "show data!"
