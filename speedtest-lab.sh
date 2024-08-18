@@ -6,7 +6,7 @@ speedtest-cli --secure --csv-header > speedtest_14.csv
 #dont space !!!!!!!
 servers_id="$(speedtest-cli --list --secure | grep -Eo '[0-9]+)' | sed 's/)//')"
 
-#eieisssss
+#eieissssss
 
 while true; do
     sleep 60
